@@ -1,0 +1,159 @@
+Benchmark1
+avg real = 0.0068
+avg user = 0.0020
+avg sys  = 0.0020
+
+real	0m0.006s
+user	0m0.002s
+sys		0m0.002s
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+
+
+Benchmark2
+avg real = 0.0070
+avg user = 0.0020
+avg sys  = 0.0020
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+real	0m0.007s
+user	0m0.002s
+sys		0m0.002s
+
+
+
+Benchmark3
+avg real = 0.0662
+avg user = 0.0426
+avg sys  = 0.0150
+
+real	0m0.064s
+user	0m0.041s
+sys		0m0.017s
+
+real	0m0.067s
+user	0m0.044s
+sys		0m0.014s
+
+real	0m0.067s
+user	0m0.043s
+sys		0m0.014s
+
+real	0m0.068s
+user	0m0.044s
+sys		0m0.014s
+
+real	0m0.065s
+user	0m0.041s
+sys		0m0.016s
+
+
+
+Benchmark4 
+avg real = 0.2238
+avg user = 0.1670
+avg sys  = 0.0394
+
+real	0m0.223s
+user	0m0.167s
+sys		0m0.038s
+
+real	0m0.225s
+user	0m0.169s
+sys		0m0.044s
+
+real	0m0.221s
+user	0m0.165s
+sys		0m0.037s
+
+real	0m0.223s
+user	0m0.167s
+sys		0m0.040s
+
+real	0m0.227s
+user	0m0.167s
+sys		0m0.038s
+
+
+
+Benchmark5 
+avg real = 0.5310
+avg user = 0.4104
+avg sys  = 0.0990
+
+real	0m0.510s
+user	0m0.393s
+sys		0m0.097s
+
+real	0m0.525s
+user	0m0.408s
+sys		0m0.098s
+
+real	0m0.523s
+user	0m0.401s
+sys		0m0.100s
+
+real	0m0.566s
+user	0m0.441s
+sys		0m0.099s
+
+real	0m0.531s
+user	0m0.409s
+sys		0m0.100s
+
+
+
+Benchmark6 
+avg real = 2.3398
+avg user = 2.0094
+avg sys  = 0.2566
+
+real	0m2.114s
+user	0m1.829s
+sys		0m0.249s
+
+real	0m2.385s
+user	0m2.025s
+sys		0m0.256s
+
+real	0m2.354s
+user	0m2.026s
+sys		0m0.259s
+
+real	0m2.370s
+user	0m2.029s
+sys		0m0.260s
+
+real	0m2.476s
+user	0m2.108s
+sys		0m0.259s	
