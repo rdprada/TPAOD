@@ -134,7 +134,7 @@ void print_all(int n){
 	for(int i = 1 ; i <= n ; i++) {
 		print_tree(mytree,i);
 		if(i != n) 
-			printf(",\n");
+			printf(", \n");
 	}
 	printf(" };\n");
 
@@ -143,7 +143,7 @@ void print_all(int n){
 	for(int i = 1 ; i <= n ; i++) {
 		printf("%i", p[i]);
 		if(i != n) 
-			printf(",\n");
+			printf(", \n");
 	}
 	printf("};\n");
 
