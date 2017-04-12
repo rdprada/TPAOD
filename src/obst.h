@@ -1,11 +1,23 @@
+/*! \file obst.h
+ *  \brief     This is library for the optimal binary search tree program.
+ *  \author    BIN MOHMAD SHAH hariz
+ *  \author    PRADA MEIJA Robinson
+ *  \version   1.0
+ *  \date      13/4/2017 
+ *  \copyright Hariz&Robinson.
+ */
+
 #ifndef OBST_H_INCLUDED
 #define OBST_H_INCLUDED
 
 typedef struct OBST OBST;
 struct OBST {
-    int key;
-    OBST *left, *right;
+  int key; /*!< the parent root */
+  OBST *left;  /*!< the child root (left) */
+  OBST *right;/*!< the child root (right) */
+
 };
+
 
 OBST *create_obst(int i, int j);
 void print_test_tree(int i, int j);
