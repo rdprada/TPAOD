@@ -1,7 +1,7 @@
 Benchmark1
-avg real = 
-max real = 
-min real = 
+avg real = 0.003
+max real = 0.003
+min real = 0.003
 
 real	0m0.003s
 user	0m0.000s
@@ -26,9 +26,9 @@ sys		0m0.003s
 
 
 Benchmark2
-avg real = 
-max real = 
-min real = 
+avg real = 0.003
+max real = 0.003	
+min real = 0.003
 
 real	0m0.003s
 user	0m0.000s
@@ -53,9 +53,9 @@ sys		0m0.003s
 
 
 Benchmark3
-avg real = 
-max real = 
-min real = 
+avg real = 0.1118
+max real = 0.1190
+min real = 0.0980
 
 real	0m0.119s
 user	0m0.071s
@@ -81,9 +81,9 @@ sys		0m0.028s
 
 
 Benchmark4 
-avg real = 
-max real = 
-min real = 
+avg real = 0.2656
+max real = 0.1190
+min real = 0.3150
 
 real	0m0.315s
 user	0m0.222s
@@ -107,9 +107,9 @@ sys		0m0.031s
 
 
 Benchmark5 
-avg real = 
-max real = 
-min real = 
+avg real = 0.5834
+max real = 0.5950
+min real = 0.5610
 
 real	0m0.592s
 user	0m0.440s
@@ -136,9 +136,9 @@ sys		0m0.120s
 
 
 Benchmark6 
-avg real = 
-max real = 
-min real = 
+avg real = 1.720
+max real = 1.754
+min real = 1.687
 
 real	0m1.693s
 user	0m1.428s
