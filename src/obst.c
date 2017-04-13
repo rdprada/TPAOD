@@ -1,3 +1,12 @@
+/*! \file obst.c
+ *  \brief     This implements the optimal binary search tree program.
+ *  \author    BIN MOHMAD SHAH hariz
+ *  \author    PRADA MEIJA Robinson
+ *  \version   1.0
+ *  \date      13/4/2017 
+ *  \copyright Hariz&Robinson.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -6,13 +15,18 @@
 #include <string.h>
 #include "obst.h"
 
-int **costs; 
-int **weights; 
-int **roots;
-int *p;
-int *keys;
+int **costs; /*!< Array for stock all possible cost optimals */
+int **weights;  /*!< Array for stock all possible weights sum */
+int **roots; /*!< Array for stock all possible roots combination */
+int *p; /*!< Array for stock the frequency for each element */
+int *keys; /*!< Array for the roots */
 
-
+/**
+ * \brief creation of binary search tree root function
+ * \param i the starting root
+ * \param j the ending root
+ * \return { new OBST type(root) if succeeds; null otherwise }
+ */
 OBST *create_obst(int i, int j) {
 
 	OBST *p;
@@ -30,6 +44,11 @@ OBST *create_obst(int i, int j) {
 
 }
 
+/**
+ * \brief print on stdout of binary search tree function
+ * \param *tree pointer to binary search tree (type OBST)
+ * \param node root of the tree
+ */
 void print_tree(OBST *tree, int node) {
 
 	if(tree == NULL || !node) {
@@ -63,6 +82,10 @@ void print_tree(OBST *tree, int node) {
 	
 }
 
+/**
+ * \brief create all the possible weight matrices of binary search function
+ * \param n the number of element in the dictionary
+ */
 void create_matrices(int n){
 
 	int x, min;
@@ -103,7 +126,12 @@ void create_matrices(int n){
 	}
 }
 
-
+/**
+ * allocation memory 
+ * \brief allocate memory for all global variable function
+ * \param n the number of element in the dictionary
+ * \param *freqFile the file which contains the frequency for each element
+ */
 void init_all(int n, FILE *freqFile) {
 
 	costs = malloc((n+1)*sizeof(int*));
@@ -126,6 +154,10 @@ void init_all(int n, FILE *freqFile) {
 
 }
 
+/**
+ * \brief print on stdout the code c correspondant to benchmarks function
+ * \param n the number of element in the dictionary
+ */
 void print_all(int n){
 	printf("static long BSTdepth = %d; // pour info. Non demandé\n",costs[0][n]);
 	printf("static int BSTroot = %d;\n",keys[roots[0][n]]);
@@ -149,6 +181,11 @@ void print_all(int n){
 
 }
 
+/**
+ * print on stdout the value of each double pointer variable use for debug
+ * \param **matrix the double pointer variable
+ * \pqrqm n the number of element in the dictionary
+ */
 void print_matrix(int **matrix, int n){
 	for(int i = 0; i <= n; i++){
 		for(int j = i; j <= n; j++)
