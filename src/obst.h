@@ -15,7 +15,6 @@ struct OBST {
   int key; /*!< the parent root */
   OBST *left;  /*!< the child root (left) */
   OBST *right;/*!< the child root (right) */
-
 };
 
 

@@ -15,11 +15,11 @@
 #include <string.h>
 #include "obst.h"
 
-int **costs;  /*!< Array for stock all possible cost optimals */
+int **costs; /*!< Array for stock all possible cost optimals */
 int **weights;  /*!< Array for stock all possible weights sum */
-int **roots;  /*!< Array for stock all possible roots combination */
+int **roots; /*!< Array for stock all possible roots combination */
 int *p; /*!< Array for stock the frequency for each element */
-int *keys;  /*!< Array for the roots */
+int *keys; /*!< Array for the roots */
 
 /**
  * \brief creation of binary search tree root function
@@ -92,9 +92,8 @@ void create_matrices(int n){
 	int i, j, k, h, m;
 
 	for(i = 0; i <= n; i++) {	
-		//weights[i][i] = q[i];
 		for(j = i + 1; j <= n; j++) {
-			weights[i][j] = weights[i][j-1] + p[j]; // + q[j];
+			weights[i][j] = weights[i][j-1] + p[j];
 		}
 	}
 
@@ -126,7 +125,6 @@ void create_matrices(int n){
 	}
 }
 
-
 /**
  * allocation memory 
  * \brief allocate memory for all global variable function
@@ -139,7 +137,6 @@ void init_all(int n, FILE *freqFile) {
 	weights = malloc((n+1)*sizeof(int*));
 	roots = malloc((n+1)*sizeof(int*));
 	p = malloc((n+1)*sizeof(int));
-	//q = malloc((n+1)*sizeof(int));
 	keys = malloc((n+1)*sizeof(int)); 
 
 	for(int i=1;i<=n;i++){   
@@ -154,7 +151,6 @@ void init_all(int n, FILE *freqFile) {
 	}
 
 }
-
 
 /**
  * \brief print on stdout the code c correspondant to benchmarks function

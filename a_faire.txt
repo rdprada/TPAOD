@@ -1,7 +1,7 @@
-3. Robinson
-4.1 R
-4.2 H
-4.3.a R
-4.3.b R
-4.3.c R-H
+3. Robinson --DONE
+4.1 R -- DONE
+4.2 H 
+4.3.a R --DONE
+4.3.b R -- DONE
+4.3.c R-H 
 Index Hariz
